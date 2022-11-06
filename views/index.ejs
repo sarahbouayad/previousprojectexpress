@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coin Flip</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Coin Flip</h1>
+  <h2>Enter a guess and see if you win!</h2>
+  <ul class="messages">
+  <% for(var i=0; i<coinFlipResults.length; i++) {%>
+    <li class="message">
+      <span><%= coinFlipResults[i].userGuess %></span>
+      <span><%= coinFlipResults[i].coinFlipResult %></span>
+      <span><%= coinFlipResults[i].winOrLose %></span>
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <form class="form" action="/results" method="POST">
+    <input type="text" placeholder="Guess Heads or Tails" name="userGuess">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

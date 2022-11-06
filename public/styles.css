@@ -1,0 +1,24 @@
+body{
+  background: rgb(2, 48, 39)
+}
+
+h1{
+  text-align: center;
+  color: white; 
+}
+
+h2{
+  text-align: center; 
+  color: white; 
+}
+
+.form{
+  position: fixed;
+  left: 42%; 
+}
+
+li span {
+align-content: center;
+color: white; 
+list-style: none;
+}
