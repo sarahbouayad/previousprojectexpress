@@ -1,4 +1,4 @@
-## Previous Project Express: Coin Flip
+## 🪙 Previous Project Express: Coin Flip 
 
 # Demo Day Project
 
